@@ -4,7 +4,11 @@
 @section('content')
 @dump($dresses)
 
-@php echo 'Ciao';
-@endphp
+@foreach ($dresses as $key => $value)
+    @php
+        echo ($value);
+    @endphp
+@endforeach
+
 
 @endsection
