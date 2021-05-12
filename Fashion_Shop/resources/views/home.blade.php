@@ -4,4 +4,7 @@
 @section('content')
 @dump($dresses)
 
+@php echo 'Ciao';
+@endphp
+
 @endsection
