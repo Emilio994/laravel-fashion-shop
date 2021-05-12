@@ -14,4 +14,4 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', 'FashionController@getList')->name('pagina-home');
-Route::get('/', 'FashionController@getArmani')->name('pagina-home');
+Route::get('/armani', 'FashionController@getArmani')->name('pagina-armani');

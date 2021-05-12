@@ -7,21 +7,21 @@ use App\Dress;
 
 class FashionController extends Controller
 {
-    // public function getList() {
-    //     $vestiti = Dress::all();
-    //     $vdata = [
-    //         'dresses'=> $vestiti
-    //     ];
+    public function getList() {
+        $vestiti = Dress::all();
+        $data = [
+            'dresses'=> $vestiti
+        ];
 
-    //     return view('home', $vdata);
-    // }
+        return view('home', $data);
+    }
 
     public function getArmani() {
         $brands = Dress::where('brand', 'armani')->get();
-        $bdata = [
+        $data = [
             'brand'=>$brands
         ];
-        return view('home', $bdata);
+        return view('armani', $data);
     }
 
     

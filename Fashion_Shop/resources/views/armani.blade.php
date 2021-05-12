@@ -2,6 +2,6 @@
 @section('title', 'Home')
     
 @section('content')
-@dump($dresses)
+@dump($brand)
 
 @endsection
